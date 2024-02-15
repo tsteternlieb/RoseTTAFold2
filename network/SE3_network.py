@@ -5,10 +5,11 @@ import torch.nn as nn
 #from equivariant_attention.modules import GConvSE3, GNormSE3
 #from equivariant_attention.fibers import Fiber
 
-from util_module import init_lecun_normal_param
+from network.util_module import init_lecun_normal_param
 from se3_transformer.model import SE3Transformer
 from se3_transformer.model.fiber import Fiber
-
+# from RoseTTAFold2.SE3Transformer.se3_transformer.model import SE3Transformer
+# from RoseTTAFold2.SE3Transformer.se3_transformer.model.fiber import Fiber
 class SE3TransformerWrapper(nn.Module):
     """SE(3) equivariant GCN with attention"""
     def __init__(self, num_layers=2, num_channels=32, num_degrees=3, n_heads=4, div=4,

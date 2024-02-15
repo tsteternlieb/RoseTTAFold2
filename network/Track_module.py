@@ -3,12 +3,12 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import einsum
 import torch.utils.checkpoint as checkpoint
-from util import cross_product_matrix
-from util_module import *
-from Attention_module import *
-from SE3_network import SE3TransformerWrapper
-from kinematics import normQ, avgQ, Qs2Rs, Rs2Qs
-from symmetry import get_symm_map
+from network.util import cross_product_matrix
+from network.util_module import *
+from network.Attention_module import *
+from network.SE3_network import SE3TransformerWrapper
+from network.kinematics import normQ, avgQ, Qs2Rs, Rs2Qs
+from network.symmetry import get_symm_map
 
 
 # Components for three-track blocks

@@ -3,10 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch import einsum
 import torch.utils.checkpoint as checkpoint
-from util import get_Cb
-from util_module import Dropout, create_custom_forward, rbf, init_lecun_normal
-from Attention_module import Attention, FeedForwardLayer, AttentionWithBias
-from Track_module import PairStr2Pair
+from network.util import get_Cb
+from network.util_module import Dropout, create_custom_forward, rbf, init_lecun_normal
+from network.Attention_module import Attention, FeedForwardLayer, AttentionWithBias
+from network.Track_module import PairStr2Pair
 
 # Module contains classes and functions to generate initial embeddings
 class PositionalEncoding2D(nn.Module):
