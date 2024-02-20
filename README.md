@@ -2,10 +2,9 @@
 GitHub repo for RoseTTAFold2
 
 ## Installation
-
 1. Clone the package
 ```
-git clone https://github.com/uw-ipd/RoseTTAFold2.git
+git clone https://github.com/tsteternlieb/RoseTTAFold2.git
 cd RoseTTAFold2
 ```
 
